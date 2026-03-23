@@ -1,27 +1,16 @@
 {
-  "manifest_version": 3,
-  "name": "CINEMÉ — Movie Finder",
-  "short_name": "CINEMÉ",
-  "description": "Search and discover movies instantly. Powered by OMDB.",
-  "version": "1.0.0",
-  "action": {
-    "default_popup": "popup.html",
-    "default_title": "CINEMÉ",
     "default_icon": {
-      "16": "icons/icon-16.png",
-      "32": "icons/icon-32.png",
-      "48": "icons/icon-48.png",
-      "128": "icons/icon-128.png"
+  "name": "Movie Finder Web App",
+  "short_name": "MovieFinder",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#e50914",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2503/2503508.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  },
-  "icons": {
-    "16": "icons/icon-16.png",
-    "32": "icons/icon-32.png",
-    "48": "icons/icon-48.png",
-    "128": "icons/icon-128.png"
-  },
-  "permissions": [],
-  "content_security_policy": {
-    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src * data:; connect-src https://www.omdbapi.com https://via.placeholder.com"
-  }
+  ]
 }
