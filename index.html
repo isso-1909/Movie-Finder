@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#c9a84c" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="CINEMÉ" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMÉ — Movie Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <div class="movie-container">
+      <header class="header">
+        <div class="logo">
+          <span class="logo-text">CINEMÉ</span>
+          <span class="logo-sub">— discover films</span>
+        </div>
+        <div class="search-wrap">
+          <input
+            type="text"
+            class="input-search"
+            placeholder="Type a title..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="btn-search" aria-label="Search">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+        </div>
+        <div class="header-reel" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M512 128C514 128 515.9 128.1 517.8 128.3L422.1 224L490 224L562 152C570.8 163 576 176.9 576 192L576 448C576 483.3 547.3 512 512 512L128 512C92.7 512 64 483.3 64 448L64 192C64 156.7 92.7 128 128 128L198.1 128L102.1 224L170 224L265 129L266 128L358.1 128L262.1 224L330 224L425 129L426 128L512.1 128z"
+            />
+          </svg>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="hero-text" id="heroText">
+          <p class="hero-label">What are you watching tonight?</p>
+        </div>
+        <div
+          class="card-container"
+          role="list"
+          aria-label="Movie results"
+        ></div>
+      </main>
+    </div>
+
+    <div
+      class="window"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Movie details"
+    >
+      <div class="info"></div>
+    </div>
+  </body>
+</html>
